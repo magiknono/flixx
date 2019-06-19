@@ -1,5 +1,5 @@
-<h1>Show Movie</h1>
-
+<section class="movie-details">
+  <div class="details">
 <ul>
 
   <li>
@@ -28,6 +28,8 @@
   </li>
 
 </ul>
-
-<span><%= link "Edit", to: Routes.movie_path(@conn, :edit, @movie) %></span>
-<span><%= link "Back", to: Routes.movie_path(@conn, :index) %></span>
+</section>
+<section class="admin">
+  <%= link "Edit", to: Routes.movie_path(@conn, :edit, @movie) %>
+  <%= link "Back", to: Routes.movie_path(@conn, :index) %>
+</section>
