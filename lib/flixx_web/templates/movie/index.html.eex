@@ -7,7 +7,7 @@
       <%= movie.description %>
     </p>
     <p>
-      <%= movie.released_on %>
+      <%= date_french(movie.released_on) %>
     </p>
       <p>
         <%= link "Show", to: Routes.movie_path(@conn, :show, movie) %>

@@ -24,7 +24,7 @@
 
   <li>
     <strong>Released on:</strong>
-    <%= @movie.released_on %>
+    <%= date_french(@movie.released_on) %>
   </li>
 
 </ul>

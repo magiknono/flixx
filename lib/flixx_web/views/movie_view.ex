@@ -1,5 +1,7 @@
 defmodule FlixxWeb.MovieView do
   use FlixxWeb, :view
+  use Timex
+
   def n_to_currency(price) do
     Number.Currency.number_to_currency(price, precision: 0)
   end
@@ -10,5 +12,9 @@ defmodule FlixxWeb.MovieView do
     else
       n_to_currency(movie)
     end
+  end
+
+  def date_french(customdate) do
+    Timex.format!(customdate, "%d-%m-%Y", :strftime)
   end
 end
