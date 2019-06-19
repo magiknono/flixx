@@ -22,5 +22,5 @@
 <% end %>
 
 <section class="admin">
-<%= link "New Movie", to: Routes.movie_path(@conn, :new) %></span>
+<%= link "New Movie", to: Routes.movie_path(@conn, :new), class: "button" %></span>
 </section>

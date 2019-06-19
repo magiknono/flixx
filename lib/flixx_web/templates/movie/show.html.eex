@@ -30,6 +30,5 @@
 </ul>
 </section>
 <section class="admin">
-  <%= link "Edit", to: Routes.movie_path(@conn, :edit, @movie) %>
-  <%= link "Back", to: Routes.movie_path(@conn, :index) %>
+  <%= link "Edit", to: Routes.movie_path(@conn, :edit, @movie), class: "button" %>
 </section>

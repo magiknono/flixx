@@ -2,4 +2,4 @@
 
 <%= render "form.html", Map.put(assigns, :action, Routes.movie_path(@conn, :create)) %>
 
-<span><%= link "Back", to: Routes.movie_path(@conn, :index) %></span>
+
