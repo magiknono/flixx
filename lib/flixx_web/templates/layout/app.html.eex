@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
-    <header>
-      <h1><img src="<%= Routes.static_path(@conn, "/images/logo.png") %>" /></h1>
-    </header>
+       <%= render "_navbar.html", assigns %>
 
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <%= get_flash(@conn, :info) %>
@@ -28,12 +26,7 @@
       <%= render @view_module, @view_template, assigns %>
       </div>
 
-      <footer>
-        <p>
-          Copyright &copy; <%= Timex.today %>
-          <%= link 'localhost', to: 'http://localhost:4000' %>
-        </p>
-      </footer>
+      <%= render "_footer.html", assigns %>
 
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
