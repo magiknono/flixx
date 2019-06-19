@@ -16,7 +16,7 @@ defmodule FlixxWeb.Router do
   scope "/", FlixxWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", MovieController, :index
     resources "/movies", MovieController
   end
 
