@@ -8,13 +8,23 @@
   </li>
 
   <li>
+    <strong>Description:</strong>
+    <%= @movie.description %>
+  </li>
+
+  <li>
     <strong>Rating:</strong>
     <%= @movie.rating %>
   </li>
 
   <li>
     <strong>Total gross:</strong>
-    <%= @movie.total_gross %>
+    <%= n_to_currency(@movie.total_gross) %>
+  </li>
+
+  <li>
+    <strong>Released on:</strong>
+    <%= @movie.released_on %>
   </li>
 
 </ul>

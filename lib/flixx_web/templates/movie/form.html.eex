@@ -9,6 +9,10 @@
   <%= text_input f, :title %>
   <%= error_tag f, :title %>
 
+  <%= label f, :description %>
+  <%= textarea f, :description %>
+  <%= error_tag f, :description %>
+
   <%= label f, :rating %>
   <%= text_input f, :rating %>
   <%= error_tag f, :rating %>
@@ -16,6 +20,10 @@
   <%= label f, :total_gross %>
   <%= number_input f, :total_gross, step: "any" %>
   <%= error_tag f, :total_gross %>
+
+  <%= label f, :released_on %>
+  <%= date_select f, :released_on %>
+  <%= error_tag f, :released_on %>
 
   <div>
     <%= submit "Save" %>
