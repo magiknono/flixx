@@ -14,6 +14,6 @@ defmodule Flixx.Cinema.Movie do
   def changeset(movie, attrs) do
     movie
     |> cast(attrs, [:title, :rating, :total_gross])
-    |> validate_required([:title, :rating, :total_gross])
+    |> validate_required([:title, :rating])
   end
 end
